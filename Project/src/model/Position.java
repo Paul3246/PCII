@@ -1,3 +1,5 @@
+package model;
+
 public class Position {
     private int height = 0;
     private int vitesse = 1;

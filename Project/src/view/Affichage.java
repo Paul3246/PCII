@@ -1,3 +1,6 @@
+package view;
+
+import model.Position;
 import javax.swing.*;
 import java.awt.*;
 

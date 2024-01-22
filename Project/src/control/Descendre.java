@@ -1,3 +1,7 @@
+package control;
+
+import model.Position;
+
 public class Descendre extends Thread{
     Position p;
     public static final int DELAY = 100;

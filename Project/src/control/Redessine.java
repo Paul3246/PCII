@@ -1,3 +1,7 @@
+package control;
+
+import view.Affichage;
+
 public class Redessine extends Thread{
     Affichage a;
     public static final int DELAY = 50; 

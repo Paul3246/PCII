@@ -1,4 +1,11 @@
+package main;
+
 import javax.swing.JFrame;
+import control.Descendre;
+import control.Redessine;
+import control.ReactionClic;
+import model.Position;
+import view.Affichage;
 
 public class Main {
     public static void main(String [] args) {

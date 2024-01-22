@@ -1,10 +1,10 @@
 package control;
+import static main.Constant.DELAY;
 
 import view.Affichage;
 
 public class Redessine extends Thread{
     Affichage a;
-    public static final int DELAY = 50; 
 
     public Redessine(Affichage a){
         this.a = a;

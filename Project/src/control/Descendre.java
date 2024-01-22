@@ -4,7 +4,6 @@ import model.Position;
 
 public class Descendre extends Thread{
     Position p;
-    public static final int DELAY = 100;
     public Descendre(Position p){
         this.p = p;
     }
@@ -14,7 +13,7 @@ public class Descendre extends Thread{
             if (p.get() >= 0){
                 p.move();
             }
-            try { Redessine.sleep(DELAY); }
+            try { Thread.sleep(100); }
             catch (Exception e) { e.printStackTrace(); }
         }
     }

@@ -10,7 +10,7 @@ public class Descendre extends Thread{
     @Override
     public void run(){
         while(true){
-            if (p.get() >= 0){
+            if (p.get() >= -125){
                 p.move();
             }
             try { Thread.sleep(100); }

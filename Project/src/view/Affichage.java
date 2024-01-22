@@ -1,13 +1,14 @@
 package view;
 import static main.Constant.*;
 
-import model.Position;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.util.ArrayList;
+
+import javax.swing.JPanel;
+
 import model.Parcours;
-import javax.swing.*;
-
-import main.Constant;
-
-import java.awt.*;
+import model.Position;
 
 public class Affichage extends JPanel {
     private Parcours parcours;
@@ -36,8 +37,9 @@ public class Affichage extends JPanel {
     }
 
     private void drawParcours(Graphics g, Parcours p){
-        for(int i = 0; i < p.get_points().size() - 1; i++){
-            g.drawLine(p.get_points().get(i).x, p.get_points().get(i).y, p.get_points().get(i+1).x, p.get_points().get(i+1).y);
+        ArrayList<java.awt.Point> points = p.get_points();
+        for(int i = 0; i < points.size() - 1; i++){
+            g.drawLine(points.get(i).x, points.get(i).y, points.get(i+1).x, points.get(i+1).y);
         }
     }
 }

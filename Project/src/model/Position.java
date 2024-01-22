@@ -3,7 +3,7 @@ package model;
 public class Position {
     private int height = 0;
     private int vitesse = 1;
-    private int avancement = 0;
+    public int avancement = 0;
 
     public int get() {
         return height;
@@ -15,13 +15,16 @@ public class Position {
     }
 
     public void move() {
-        System.out.println(height);
+        //System.out.println(height);
         height = height - vitesse; // On modifie la hauteur, en la decrementant de la valeur de la vitesse
-        if (height < 0) {
-            height = 0; // Si on a fini le mouvement
+        if (height < -125) {
+            height = -125; // Si on a fini le mouvement
         } else {
             vitesse = vitesse + 1;// On augmente progressivement la vitesse (a chaque fois que le thread appel la
                                   // fonction move)
         }
+    }
+    public void avance(){
+        avancement = avancement + 1;
     }
 }

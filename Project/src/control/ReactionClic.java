@@ -1,10 +1,10 @@
 package control;
 
-import java.awt.event.MouseEvent;
-
-import static main.Constant.IMPULSION;
+import static main.Constant.*;
 
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 import model.Position;
 
 public class ReactionClic extends MouseAdapter{

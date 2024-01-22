@@ -10,8 +10,8 @@ public class Constant {
     public static final int OHEIGHT = 100;
     public static final int MAX_HEIGHT = FHEIGHT - 100;
     public static final int MIN_HEIGHT = 100;
-    public static final int BEFORE = 50;
-    public static final int AFTER = 200;
+    public static final int BEFORE = 100;
+    public static final int AFTER = 50;
     public static final int IMPULSION = -10;
     public static final int OWIDTH = 50;
     public static final int RATIO = 1;

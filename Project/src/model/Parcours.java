@@ -22,7 +22,7 @@ public class Parcours {
         points.add(new Point(0-BEFORE, yr));
         points.add(new Point(BEFORE, yr));
 
-        while(length < FHEIGHT+AFTER){
+        while(length < FWIDTH+AFTER){
             Point last = points.get(points.size()-1);
             int y_last = last.y;
             int xr = new Random().nextInt(X_MAX - X_MIN) + X_MIN;

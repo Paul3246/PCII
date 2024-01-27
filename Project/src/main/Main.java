@@ -18,7 +18,7 @@ public class Main {
         Affichage a = new Affichage(p, parcours);
         Redessine r = new Redessine(a);
         Descendre d = new Descendre(p);
-        Avance av = new Avance(p, parcours);
+        Avance av = new Avance(p);
         maFenetre.add(a);
         ReactionClic rc = new ReactionClic(p);
         a.addMouseListener(rc);

@@ -1,14 +1,11 @@
 package control;
 
-import model.Parcours;
 import model.Position;
 
 public class Avance extends Thread{
     Position p;
-    Parcours parcours;
-    public Avance(Position p, Parcours parcours){
+    public Avance(Position p){
         this.p = p;
-        this.parcours = parcours;
     }
     @Override
     public void run(){

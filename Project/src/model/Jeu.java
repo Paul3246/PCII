@@ -3,8 +3,8 @@ package model;
 import javax.swing.JFrame;
 
 import control.Avance;
-import control.Colorchange;
 import control.Descendre;
+import control.Imagechange;
 import control.ReactionClic;
 import control.Redessine;
 import view.Affichage;
@@ -12,12 +12,13 @@ import view.Affichage;
 public class Jeu {
         public void game(JFrame maFenetre) {
         Position p = new Position();
+        ImagePosition ip = new ImagePosition();
         Parcours parcours = new Parcours(p);
-        Affichage a = new Affichage(p, parcours);
+        Affichage a = new Affichage(p, parcours, ip);
         Redessine r = new Redessine(a);
         Descendre d = new Descendre(p);
         Avance av = new Avance(p);
-        Colorchange c = new Colorchange(a);
+        Imagechange c = new Imagechange(ip);
         maFenetre.add(a);
         ReactionClic rc = new ReactionClic(p);
         a.addMouseListener(rc);

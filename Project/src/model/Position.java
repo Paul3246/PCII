@@ -4,6 +4,8 @@ public class Position {
     private int height = 0;
     private int vitesse = 1;
     public int avancement = 0;
+    public int score = 0;
+    public int best_score = 0;
 
     public int get() {
         return height;
@@ -26,5 +28,13 @@ public class Position {
     }
     public void avance(){
         avancement = avancement + 1;
+    }
+    public void score(){
+        score = score + 1;
+    }
+    public void best_score(){
+        if (score > best_score){
+            best_score = score;
+        }
     }
 }

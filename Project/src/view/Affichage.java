@@ -1,6 +1,7 @@
 package view;
 import static main.Constant.*;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -29,6 +30,8 @@ public class Affichage extends JPanel {
         final int h = OHEIGHT;
         g.drawOval(x, y, w, h);
         drawParcours(g, parcours);
+        showScore(g);
+        //showBestScore(g);
     }
 
     // Convertit les coordonnées Y du modèle en coordonnées de la vue
@@ -41,5 +44,14 @@ public class Affichage extends JPanel {
         for(int i = 0; i < points.size() - 1; i++){
             g.drawLine(points.get(i).x, points.get(i).y, points.get(i+1).x, points.get(i+1).y);
         }
+    }
+    private void showScore(Graphics g){
+        g.drawString("Score : " + p.score, 10, 10);
+    }
+    private void showBestScore(Graphics g){
+        g.drawString("Best score : " + p.best_score, 10, 20);
+    }
+    public void changeColorRandomly(Graphics g){
+        this.setBackground(new Color(R.nextInt(256), R.nextInt(256), R.nextInt(256)));
     }
 }

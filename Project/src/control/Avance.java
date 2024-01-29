@@ -11,6 +11,8 @@ public class Avance extends Thread{
     public void run(){
         while(true){
             p.avance();
+            p.score();
+            p.best_score();
             try { Avance.sleep(10); }
             catch (Exception e) { e.printStackTrace(); }
         }

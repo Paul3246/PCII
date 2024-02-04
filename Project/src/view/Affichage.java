@@ -30,8 +30,8 @@ public class Affichage extends JPanel {
         this.parcours = parcours;
         parcours.generate_points();
         try {
-            image1 = ImageIO.read(new File("/home/paul/PCII/Projet_PCII/Project/src/images/flappy.png"));
-            image2 = ImageIO.read(new File("/home/paul/PCII/Projet_PCII/Project/src/images/flappy.png"));
+            image1 = ImageIO.read(new File("./Project/src/images/flappy.png"));
+            image2 = ImageIO.read(new File("./Project/src/images/flappy.png"));
         } catch (IOException ex) {
             throw new RuntimeException("Image not found");
         }
